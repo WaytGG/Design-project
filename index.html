@@ -5,11 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="./assets/css/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap-utilities.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    
+    <header class="page-header d-flex">
+      <div class="container d-flex flex-column">
+        <div class="row py-5 justify-content-around">
+          <a class="col header-logo" href="#"
+            ><img src="./assets/images/svg/header-logo.svg" alt="logo"
+          /></a>
+          <nav class="col d-flex align-items-center header-nav">
+            <ul class="col d-flex justify-content-between">
+              <li><a class="menu-link" href="#">ГЛАВНАЯ</a></li>
+              <li><a class="menu-link" href="#">ОБ АВТОРЕ</a></li>
+              <li><a class="menu-link" href="#">РАБОТЫ</a></li>
+              <li><a class="menu-link" href="#">ПРОЦЕСС</a></li>
+              <li><a class="menu-link" href="#">КОНТАКТЫ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div
+          class="row d-flex justify-content-evenly flex-grow-1 container-content-header"
+        >
+          <img
+            class="header-img"
+            src="./assets/images/svg/header-img.svg"
+            alt="pc"
+          />
+          <section
+            class="col d-flex flex-column justify-content-evenly section-header-text"
+          >
+            <h1 class="heading-main">Дизайн и верстка</h1>
+            <p class="header-par">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+              на латинице с начала XVI века.
+            </p>
+            <a class="d-flex justify-content-center btn-header" href="#"
+              >НАПИСАТЬ МНЕ</a
+            >
+          </section>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
