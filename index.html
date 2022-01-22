@@ -35,7 +35,7 @@
               <li><a class="menu-link" href="#">ОБ АВТОРЕ</a></li>
               <li><a class="menu-link" href="#">РАБОТЫ</a></li>
               <li><a class="menu-link" href="#">ПРОЦЕСС</a></li>
-              <li><a class="menu-link" href="#">КОНТАКТЫ</a></li>
+              <li><a class="menu-link" href="#contacts-form">КОНТАКТЫ</a></li>
             </ul>
           </nav>
         </div>
@@ -284,7 +284,87 @@
           </div>
         </article>
       </section>
-      
+      <div>
+        <div class="container d-flex justify-content-center container-clients">
+          <div class="row sub-container-clients justify-content-between">
+            <div class="col d-flex align-items-center justify-content-center">
+              <img src="./assets/images/svg/microsoft.svg" alt="microsoft" />
+            </div>
+            <div class="col d-flex align-items-center justify-content-center">
+              <img src="./assets/images/svg/microsoft.svg" alt="microsoft" />
+            </div>
+            <div class="col d-flex align-items-center justify-content-center">
+              <img src="./assets/images/svg/microsoft.svg" alt="microsoft" />
+            </div>
+            <div class="col d-flex align-items-center justify-content-center">
+              <img src="./assets/images/svg/microsoft.svg" alt="microsoft" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex align-items-center form-container">
+        <div class="container d-flex flex-column align-items-center">
+          <div class="d-flex flex-column align-items-center form-wanna-web">
+            <h2 class="form-heading">Хотите веб-сайт?</h2>
+            <p class="form-par">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+              на латинице с начала XVI века.
+            </p>
+          </div>
+          <form
+            id="contacts-form"
+            class="d-flex align-items-center flex-column form"
+            action=""
+          >
+            <div
+              class="row flex-nowrap justify-content-between container-input"
+            >
+              <input
+                class="col-5 form-input"
+                type="text"
+                placeholder="Ваше имя"
+                required
+                pattern="[a-z]{5,15}"
+                title="Username should only contain lowercase english letters.Minimum 5 letters."
+              />
+              <input
+                class="col-5 form-input"
+                type="email"
+                placeholder="Ваш e-mail"
+                required
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Password must contain 1 capital letter and one number.Minimum 8 symbols."
+              />
+            </div>
+            <textarea
+              class="form-textarea"
+              name="textarea"
+              placeholder="Сообщение"
+            ></textarea>
+            <button class="form-button" type="submit">ОТПРАВИТЬ</button>
+          </form>
+        </div>
+      </div>
     </main>
+    <footer class="section-footer">
+      <div class="container d-flex justify-content-between align-items-center footer-container">
+        <div class="footer-info">
+          <h3 class="footer-heading">Иванов Иван</h3>
+          <span class="copyright">(с) 2018. Все права защищены.</span>
+        </div>
+        <div class="social d-flex justify-content-between">
+          <a href="#"
+            ><img src="./assets/images/svg/vk-social.svg" alt="vkontakte"
+          /></a>
+          <a href="#"
+            ><img src="./assets/images/svg/vk-social.svg" alt="vkontakte"
+          /></a>
+          <a href="#"
+            ><img src="./assets/images/svg/vk-social.svg" alt="vkontakte"
+          /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
