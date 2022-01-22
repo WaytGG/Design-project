@@ -223,3 +223,45 @@
 .plate-section {
   min-height: 960px;
 }
+
+.plate {
+  min-width: 25%;
+  min-height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.plate:nth-child(2n+2) {
+  background-image: url(/assets/images/img/plate-2.jpg);
+}
+
+.plate:nth-child(2n+1) {
+  background-image: url(/assets/images/img/plate-1.jpg);
+}
+
+.overlay {
+  visibility: hidden;
+}
+
+.overlay-wrapper {
+  min-width: 25%;
+  min-height: 50vh;
+}
+
+.overlay-wrapper:hover {
+  position: relative;
+  min-width: 25%;
+  min-height: 50vh;
+  background-color: hsla(213, 40%, 34%, 0.80);
+  cursor: pointer;
+}
+
+.plate:hover .overlay {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  visibility: visible;
+}
+
+
