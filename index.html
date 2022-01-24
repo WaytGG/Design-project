@@ -31,11 +31,21 @@
             <ul
               class="d-flex flex-sm-row flex-column align-items-center justify-content-between"
             >
-              <li class="menu-list"><a class="menu-link" href="#">ГЛАВНАЯ</a></li>
-              <li class="menu-list"><a class="menu-link" href="#">ОБ АВТОРЕ</a></li>
-              <li class="menu-list"><a class="menu-link" href="#">РАБОТЫ</a></li>
-              <li class="menu-list"><a class="menu-link" href="#">ПРОЦЕСС</a></li>
-              <li class="menu-list"><a class="menu-link" href="#contacts-form">КОНТАКТЫ</a></li>
+              <li class="menu-list">
+                <a class="menu-link" href="#">ГЛАВНАЯ</a>
+              </li>
+              <li class="menu-list">
+                <a class="menu-link" href="#">ОБ АВТОРЕ</a>
+              </li>
+              <li class="menu-list">
+                <a class="menu-link" href="#">РАБОТЫ</a>
+              </li>
+              <li class="menu-list">
+                <a class="menu-link" href="#">ПРОЦЕСС</a>
+              </li>
+              <li class="menu-list">
+                <a class="menu-link" href="#contacts-form">КОНТАКТЫ</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -147,28 +157,26 @@
               class="col-12 col-sm-12 col-md-6 col-xl-6 d-flex justify-content-center flex-column skills"
             >
               <h2 class="skills-heading">Мои навыки</h2>
-              <article class="col-12 col-sm-12 col-md-6 col-xl-6 skill">
+              <article class="col-12 col-sm-12 col-md-9 col-xl-9 skill">
                 <h3 class="skill-heading">Adobe Photoshop</h3>
                 <div class="skill-bar">
                   <div class="skill-progress"></div>
                 </div>
               </article>
-              <article class="col-12 col-sm-12 col-md-6 col-xl-6 skill">
+              <article class="col-12 col-sm-12 col-md-9 col-xl-9 skill">
                 <h3 class="skill-heading">Adobe Photoshop</h3>
                 <div class="skill-bar">
                   <div class="skill-progress"></div>
                 </div>
               </article>
-              <article class="col-12 col-sm-12 col-md-6 col-xl-6 skill">
+              <article class="col-12 col-sm-12 col-md-9 col-xl-9 skill">
                 <h3 class="skill-heading">Adobe Photoshop</h3>
                 <div class="skill-bar">
                   <div class="skill-progress"></div>
                 </div>
               </article>
             </div>
-            <div
-              class="col-12 col-sm-12 col-md-6 col-xl-6 d-flex skill-photo-container"
-            >
+            <div class="container col-12 col-sm-12 col-md-6 col-xl-6 d-flex">
               <img
                 class="skill-photo"
                 src="./assets/images/img/skill-photo.jpg"
@@ -190,15 +198,8 @@
               на латинице с начала XVI века.
             </p>
           </div>
-          <div class="video-player">
-            <img
-              class="video-image"
-              src="./assets/images/img/video.jpg"
-              alt="video"
-            />
-            <div
-              class="d-flex justify-content-center align-items-center video-play"
-            >
+          <div class="container video-player">
+            <div class="video-play">
               <div class="video-button"></div>
             </div>
           </div>
@@ -289,35 +290,57 @@
         </article>
       </section>
       <div>
-        <div class="container d-flex justify-content-center container-clients">
-          <div class="row sub-container-clients justify-content-between">
+        <div
+          class="container-fluid d-flex justify-content-center container-clients"
+        >
+          <div class="row justify-content-between">
             <div
               class="col-12 col-sm-12 col-md-6 col-xl-3 d-flex align-items-center justify-content-center"
             >
-              <img src="./assets/images/svg/microsoft.svg" alt="microsoft" />
+              <img
+                class="clients-img"
+                src="./assets/images/svg/microsoft.svg"
+                alt="microsoft"
+              />
             </div>
             <div
               class="col-12 col-sm-12 col-md-6 col-xl-3 d-flex align-items-center justify-content-center"
             >
-              <img src="./assets/images/svg/microsoft.svg" alt="microsoft" />
+              <img
+                class="clients-img"
+                src="./assets/images/svg/microsoft.svg"
+                alt="microsoft"
+              />
             </div>
             <div
               class="col-12 col-sm-12 col-md-6 col-xl-3 d-flex align-items-center justify-content-center"
             >
-              <img src="./assets/images/svg/microsoft.svg" alt="microsoft" />
+              <img
+                class="clients-img"
+                src="./assets/images/svg/microsoft.svg"
+                alt="microsoft"
+              />
             </div>
             <div
               class="col-12 col-sm-12 col-md-6 col-xl-3 d-flex align-items-center justify-content-center"
             >
-              <img src="./assets/images/svg/microsoft.svg" alt="microsoft" />
+              <img
+                class="clients-img"
+                src="./assets/images/svg/microsoft.svg"
+                alt="microsoft"
+              />
             </div>
           </div>
         </div>
       </div>
-      <div class="d-flex align-items-center form-container">
-        <div class="container d-flex flex-column align-items-center">
+      <div class="container-fluid form-container">
+        <div
+          class="container d-flex flex-column justify-content-center align-items-center form-container"
+        >
           <div class="row">
-            <div class="d-flex col-12 flex-column align-items-center flex-wrap form-wanna-web">
+            <div
+              class="d-flex col-12 flex-column align-items-center flex-wrap form-wanna-web"
+            >
               <h2 class="form-heading">Хотите веб-сайт?</h2>
               <p class="d-flex flex-wrap form-par">
                 Lorem Ipsum - это текст-"рыба", часто используемый в печати и
@@ -328,14 +351,14 @@
           </div>
           <form
             id="contacts-form"
-            class="d-flex col-12 align-items-center flex-column form"
+            class="container d-flex flex-column form"
             action=""
           >
             <div
-              class="row flex-nowrap justify-content-between container-input"
+              class="row flex-wrap d-flex justify-content-center container-input"
             >
               <input
-                class="col-5 form-input"
+                class="col-12 col-sm-12 col-md-12 col-xl form-input"
                 type="text"
                 placeholder="Ваше имя"
                 required
@@ -343,19 +366,21 @@
                 title="Username should only contain lowercase english letters.Minimum 5 letters."
               />
               <input
-                class="col-5 form-input"
+                class="col-12 col-sm-12 col-md-12 col-xl form-input"
                 type="email"
                 placeholder="Ваш e-mail"
                 required
                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                 title="Password must contain 1 capital letter and one number.Minimum 8 symbols."
               />
+              <div class="col-12 container-textarea">
+                <textarea
+                  class="col-12 form-textarea"
+                  name="textarea"
+                  placeholder="Сообщение"
+                ></textarea>
+              </div>
             </div>
-            <textarea
-              class="form-textarea"
-              name="textarea"
-              placeholder="Сообщение"
-            ></textarea>
             <button class="form-button" type="submit">ОТПРАВИТЬ</button>
           </form>
         </div>

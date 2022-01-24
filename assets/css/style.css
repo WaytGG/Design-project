@@ -100,7 +100,6 @@
 }
 
 .container-projects {
-  width: 100%;
   min-height: 250px;
 }
 
@@ -108,6 +107,7 @@
   display: flex;
   width: 141px;
   height: 50px;
+  padding: 0;
 }
 
 .span-projects {
@@ -122,10 +122,6 @@
 
 .skills-container {
   min-height: 681px;
-}
-
-.row-container {
-  width: 100%;
 }
 
 .skills-heading {
@@ -158,7 +154,7 @@
 }
 
 .skill-photo {
-  max-width: 555px;
+  width: 100%;
   object-fit: cover;
   object-position: center;
 }
@@ -168,7 +164,7 @@
 }
 
 .video-container {
-  min-height: 1004px;
+  height: 1004px;
 }
 
 .video-text {
@@ -194,19 +190,19 @@
 }
 
 .video-player {
-  position: relative;
-}
-
-.video-image {
-  max-width: 1110px;
-  object-fit: cover;
-  object-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-image: url(/assets/images/img/video.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .video-play {
-  position: absolute;
-  top: 41%;
-  left: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -215,7 +211,7 @@
 }
 
 .video-button {
-  margin-right: -4px;
+  margin-left: 5px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -268,12 +264,11 @@
 }
 
 .container-clients {
-  width: 100%;
   min-height: 292px;
 }
 
-.sub-container-clients {
-  min-width: 1110px;
+.clients-img {
+  width: 100%;
 }
 
 .form-container {
@@ -299,12 +294,8 @@
 }
 
 .form {
-  height: 350px;
   max-width: 540px;
-}
-
-.container-input {
-  width: 540px;
+  height: 350px;
 }
 
 .form-textarea,
@@ -323,18 +314,23 @@
 }
 
 .form-input {
-  width: 255px;
+  min-width: 255px;
   height: 50px;
-  padding-left: 20px;
+}
+
+.form-input:first-child {
+  margin-right: 30px;
+}
+
+.container-textarea {
+  padding: 0;
 }
 
 .form-textarea {
-  max-width: 540px;
-  width: 100%;
-  min-height: 175px;
+  height: 175px;
   resize: none;
   margin: 20px 0 50px 0;
-  padding: 17px 20px;
+  padding: 17px 13px;
 }
 
 .form-button {
@@ -377,47 +373,107 @@
   color: var(--font-color-3);
 }
 
-@media screen and (max-width: 375px) {
+/* =====================================MEDIA============================================= */
+@media screen and (max-width: 1200px) {
+  .form-input:first-child {
+    margin: 0 0 20px 0;
+  }
+
+  .form-textarea {
+    height: 130px;
+  }
+
+  .container-textarea {
+    height: 130px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .skill-photo {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .form-input:first-child {
+    margin: 0 0 20px 0;
+  }
+
+  .container-textarea {
+    height: 130px;
+    margin-bottom: 40px;
+  }
+
+  .form-textarea {
+    height: 130px;
+  }
+}
+
+/* ================================================== */
+
+@media screen and (max-width: 768px) {
   .header-nav {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
-  .menu-list:not(:last-child) {
-    margin-bottom: 10px;
-  }
-
-  .section-header-text {
-    text-align: center;
-  }
-
+  .heading-main,
   .btn-header {
     margin: 0 auto;
   }
 
+  .skills-container {
+    margin: 40px auto;
+  }
+
+  .skills-heading {
+    display: flex;
+    justify-content: center;
+  }
+
   .skill-photo {
     display: inline-block;
-    max-width: 280px;
-    margin-top: 80px;
+    width: 100%;
+    margin: 80px auto 0;
   }
 
-  .video-section {
-    height: 550px;
+  .video-container {
+    height: 850px;
   }
 
-  .video-image {
-    max-width: 320px;
+  .video-player {
+    height: 500px;
+  }
+
+  .form-input:first-child {
+    margin: 0;
+  }
+
+  .form-input:first-child {
+    margin-bottom: 20px;
+  }
+
+  .container-textarea {
+    height: 130px;
+    margin-bottom: 40px;
+  }
+
+  .form-textarea {
+    height: 130px;
   }
 
   .footer-info {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
   }
 
   .social-link {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
   }
 }
+/* ===================================================== */
 
 @media screen and (max-width: 576px) {
   .header-nav {
@@ -432,50 +488,164 @@
     text-align: center;
   }
 
+  .header-par {
+    padding: 0 10px;
+  }
+
   .btn-header {
     margin: 0 auto;
   }
 
+  .about-par {
+    padding: 30px 10px;
+  }
+
+  .skills-heading {
+    display: flex;
+    justify-content: center;
+  }
+
+  .skills {
+    margin-top: 30px;
+  }
+
   .skill-photo {
     display: inline-block;
-    width: 280px;
+    width: 100%;
     margin-top: 80px;
   }
 
-  .video-section {
-    height: 550px;
+  .video-container {
+    height: 500px;
   }
 
-  .video-image {
-    max-width: 350px;
+  .video-text {
+    margin: 10px auto;
+  }
+
+  .video-player {
+    height: 350px;
+    background-position: center;
+    background-size: cover;
   }
 
   .plates-section {
     flex-wrap: wrap;
   }
-}
 
-@media screen and (max-width: 768px) {
-  .header-nav {
-    margin-top: 30px;
+  .form-input:first-child {
+    margin: 0;
   }
 
-  .heading-main,
+  .form-input:first-child {
+    margin-bottom: 20px;
+  }
+
+  .container-textarea {
+    height: 130px;
+    margin-bottom: 40px;
+  }
+
+  .form-textarea {
+    height: 130px;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+/* ======================================================================= */
+@media screen and (max-width: 375px) {
+  .header-nav {
+    margin-top: 50px;
+  }
+
+  .menu-list:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .section-header-text {
+    text-align: center;
+  }
+
+  .header-par {
+    padding: 0 10px;
+  }
+
   .btn-header {
     margin: 0 auto;
   }
 
+  .about-par {
+    padding: 30px 10px;
+  }
+
+  .skills-heading {
+    display: flex;
+    justify-content: center;
+  }
+
   .skill-photo {
     display: inline-block;
-    width: 280px;
+    width: 100%;
     margin-top: 80px;
   }
-}
 
-@media screen and (max-width: 992px) {
-  .skill-photo {
-    display: inline-block;
-    width: 320px;
-    margin-top: 80px;
+  .video-container {
+    height: 500px;
+  }
+
+  .video-text {
+    margin: 10px auto;
+  }
+
+  .video-player {
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .video-play {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--font-color-3);
+    cursor: pointer;
+  }
+
+  .form-input:first-child {
+    margin: 0;
+  }
+
+  .form-input:first-child {
+    margin-bottom: 20px;
+  }
+
+  .container-textarea {
+    height: 130px;
+    margin-bottom: 40px;
+  }
+
+  .form-textarea {
+    height: 130px;
+  }
+
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-link {
+    display: flex;
+    justify-content: center;
   }
 }
