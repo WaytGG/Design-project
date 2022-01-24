@@ -282,7 +282,7 @@
 }
 
 .form-wanna-web {
-  width: 540px;
+  max-width: 540px;
 }
 
 .form-heading {
@@ -329,7 +329,8 @@
 }
 
 .form-textarea {
-  min-width: 540px;
+  max-width: 540px;
+  width: 100%;
   min-height: 175px;
   resize: none;
   margin: 20px 0 50px 0;
@@ -395,7 +396,7 @@
 
   .skill-photo {
     display: inline-block;
-    width: 280px;
+    max-width: 280px;
     margin-top: 80px;
   }
 
