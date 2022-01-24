@@ -66,7 +66,7 @@
               вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
               на латинице с начала XVI века.
             </p>
-            <a class="d-flex justify-content-center btn-header" href="#"
+            <a class="d-flex justify-content-center btn-header button" href="#"
               >НАПИСАТЬ МНЕ</a
             >
           </section>
@@ -353,6 +353,7 @@
             id="contacts-form"
             class="container d-flex flex-column form"
             action=""
+            method="post"
           >
             <div
               class="row flex-wrap d-flex justify-content-center container-input"
@@ -363,15 +364,13 @@
                 placeholder="Ваше имя"
                 required
                 pattern="[a-z]{5,15}"
-                title="Username should only contain lowercase english letters.Minimum 5 letters."
+                title="Username should only contain english letters.Minimum 5 letters."
               />
               <input
                 class="col-12 col-sm-12 col-md-12 col-xl form-input"
                 type="email"
                 placeholder="Ваш e-mail"
                 required
-                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                title="Password must contain 1 capital letter and one number.Minimum 8 symbols."
               />
               <div class="col-12 container-textarea">
                 <textarea
@@ -381,7 +380,7 @@
                 ></textarea>
               </div>
             </div>
-            <button class="form-button" type="submit">ОТПРАВИТЬ</button>
+            <button class="form-button button" type="submit">ОТПРАВИТЬ</button>
           </form>
         </div>
       </div>

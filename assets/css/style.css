@@ -32,6 +32,7 @@
 
 .menu-link {
   color: var(--font-color-1);
+  text-transform: uppercase;
 }
 
 .menu-link:hover {
@@ -64,11 +65,17 @@
   width: 225px;
   height: 65px;
   padding: 25px 41px;
-  background-color: var(--main-color-three);
-  color: var(--main-color-two);
 }
 
-.btn-header:hover {
+.button {
+  background-color: var(--main-color-three);
+  color: var(--font-color-3);
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
   background-color: #34537ace;
 }
 
@@ -124,6 +131,10 @@
   min-height: 681px;
 }
 
+.row-container {
+  width: 100%;
+}
+
 .skills-heading {
   font-size: 32px;
   font-weight: 500;
@@ -154,7 +165,7 @@
 }
 
 .skill-photo {
-  width: 100%;
+  max-width: 555px;
   object-fit: cover;
   object-position: center;
 }
@@ -219,8 +230,9 @@
   border-color: transparent transparent transparent var(--font-color-1);
 }
 
-.plate-section {
+.plates-section {
   min-height: 960px;
+  padding: 0;
 }
 
 .plate {
@@ -251,7 +263,7 @@
 .overlay-wrapper:hover {
   position: relative;
   min-width: 25%;
-  min-height: 50vh;
+  min-height: 100%;
   background-color: hsla(213, 40%, 34%, 0.8);
 }
 
@@ -336,16 +348,8 @@
 .form-button {
   width: 190px;
   height: 55px;
-  background-color: var(--main-color-three);
-  color: var(--font-color-3);
-  font-size: 14px;
   margin: 0 auto;
-  border: none;
-  cursor: pointer;
-}
-
-.form-button:hover {
-  background-color: hsla(213, 40%, 34%, 0.712);
+  font-size: 14px;
 }
 
 .section-footer {
@@ -373,8 +377,12 @@
   color: var(--font-color-3);
 }
 
-/* =====================================MEDIA============================================= */
 @media screen and (max-width: 1200px) {
+  .skill-photo {
+    display: inline-block;
+    width: 100%;
+  }
+
   .form-input:first-child {
     margin: 0 0 20px 0;
   }
@@ -408,8 +416,6 @@
     height: 130px;
   }
 }
-
-/* ================================================== */
 
 @media screen and (max-width: 768px) {
   .header-nav {
@@ -473,7 +479,6 @@
     margin-top: 20px;
   }
 }
-/* ===================================================== */
 
 @media screen and (max-width: 576px) {
   .header-nav {
@@ -505,10 +510,6 @@
     justify-content: center;
   }
 
-  .skills {
-    margin-top: 30px;
-  }
-
   .skill-photo {
     display: inline-block;
     width: 100%;
@@ -517,6 +518,7 @@
 
   .video-container {
     height: 500px;
+    padding-bottom: 20px;
   }
 
   .video-text {
@@ -529,8 +531,12 @@
     background-size: cover;
   }
 
-  .plates-section {
-    flex-wrap: wrap;
+  .video-play {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--font-color-3);
+    cursor: pointer;
   }
 
   .form-input:first-child {
@@ -552,17 +558,14 @@
 
   .footer-info {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
   }
 
   .social-link {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
   }
 }
-
 /* ======================================================================= */
 @media screen and (max-width: 375px) {
   .header-nav {
@@ -602,6 +605,7 @@
 
   .video-container {
     height: 500px;
+    padding-bottom: 20px;
   }
 
   .video-text {
