@@ -121,8 +121,11 @@
 }
 
 .skills-container {
-  width: 1150px;
   min-height: 681px;
+}
+
+.row-container {
+  width: 100%;
 }
 
 .skills-heading {
@@ -145,7 +148,6 @@
 
 .skill-bar {
   background-color: #c4c4c4;
-  width: 445px;
   height: 4px;
 }
 
@@ -171,7 +173,7 @@
 
 .video-text {
   margin: 100px 0 57px 0;
-  width: 540px;
+  max-width: 540px;
 }
 
 .vedeo-heading {
@@ -298,7 +300,7 @@
 
 .form {
   height: 350px;
-  width: 540px;
+  max-width: 540px;
 }
 
 .container-input {
@@ -355,8 +357,11 @@
 }
 
 .footer-container {
-  width: 1125px;
   min-height: 151px;
+}
+
+.footer-row {
+  width: 100%;
 }
 
 .footer-heading {
@@ -371,6 +376,105 @@
   color: var(--font-color-3);
 }
 
-.social {
-  width: 175px;
+@media screen and (max-width: 375px) {
+  .header-nav {
+    margin-top: 50px;
+  }
+
+  .menu-list:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .section-header-text {
+    text-align: center;
+  }
+
+  .btn-header {
+    margin: 0 auto;
+  }
+
+  .skill-photo {
+    display: inline-block;
+    width: 280px;
+    margin-top: 80px;
+  }
+
+  .video-section {
+    height: 550px;
+  }
+
+  .video-image {
+    max-width: 320px;
+  }
+
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-link {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header-nav {
+    margin-top: 50px;
+  }
+
+  .menu-list:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .section-header-text {
+    text-align: center;
+  }
+
+  .btn-header {
+    margin: 0 auto;
+  }
+
+  .skill-photo {
+    display: inline-block;
+    width: 280px;
+    margin-top: 80px;
+  }
+
+  .video-section {
+    height: 550px;
+  }
+
+  .video-image {
+    max-width: 350px;
+  }
+
+  .plates-section {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-nav {
+    margin-top: 30px;
+  }
+
+  .heading-main,
+  .btn-header {
+    margin: 0 auto;
+  }
+
+  .skill-photo {
+    display: inline-block;
+    width: 280px;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .skill-photo {
+    display: inline-block;
+    width: 320px;
+    margin-top: 80px;
+  }
 }
