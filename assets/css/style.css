@@ -118,7 +118,6 @@
 
 .item-project {
   display: flex;
-  width: 141px;
   height: 50px;
   padding: 0;
 }
@@ -454,7 +453,7 @@
   .btn-header {
     margin: 0 auto;
   }
-  
+
   .skills-container {
     justify-content: center;
     padding: 20px 0;
@@ -532,6 +531,10 @@
 
   .about-par {
     padding: 30px 10px;
+  }
+
+  .item-project {
+    margin: 20px 0;
   }
 
   .skills-container {
@@ -625,6 +628,10 @@
     padding: 30px 10px;
   }
 
+  .item-project {
+    margin: 20px 0;
+  }
+
   .skills-container {
     justify-content: center;
   }
@@ -678,6 +685,10 @@
 
   .form-textarea {
     height: 130px;
+  }
+
+  .footer-container {
+    justify-content: center !important;
   }
 
   .footer-info {
